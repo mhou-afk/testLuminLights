@@ -50,51 +50,29 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Container(),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 0;
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.lightbulb),
-            // ignore: deprecated_member_use
-            title: Text('Lights'),
-            backgroundColor: Colors.blue
-          ),
-
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            // ignore: deprecated_member_use
-            title: Text('Home'),
-            backgroundColor: Colors.blue
-          ),
-
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            // ignore: deprecated_member_use
-            title: Text('Settings'),
-            backgroundColor: Colors.blue
-          ),
-        ]
-      )
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
+        appBar: AppBar(
+          title: Text(widget.title),
         ),
-    );
+        body: Container(),
+        bottomNavigationBar: BottomNavigationBar(currentIndex: 0, items: [
+          BottomNavigationBarItem(
+              icon: Icon(Icons.lightbulb),
+              // ignore: deprecated_member_use
+              title: Text('Lights'),
+              backgroundColor: Colors.blue),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              // ignore: deprecated_member_use
+              title: Text('Home'),
+              backgroundColor: Colors.blue),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.settings),
+              // ignore: deprecated_member_use
+              title: Text('Settings'),
+              backgroundColor: Colors.blue),
+        ]));
   }
 }
